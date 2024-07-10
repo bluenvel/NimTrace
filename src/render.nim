@@ -23,7 +23,7 @@ proc main =
   world.add(sphere(0, 0, 3.0, 1.5))
 
   block renderProcedure:
-    let output: File = open("output.ppm", fmWrite)
+    let output: File = open("output/render.ppm", fmWrite)
     output.write("P3\n", pixelplaneWidth, " ", pixelplaneHeight, "\n")
     output.write("255\n")
     defer: 
